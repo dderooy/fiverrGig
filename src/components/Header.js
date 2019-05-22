@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby';
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -8,8 +9,8 @@ const Header = props => (
     </div>
     <div className="content">
       <div className="inner">
-        <h1>David DeRooy</h1>
-        <p> An engineer who enjoys programming and learning new things</p>
+        <h1>{props.h1}</h1>
+        <p>{props.h2}</p>
       </div>
     </div>
     <nav>
@@ -52,6 +53,24 @@ const Header = props => (
 Header.propTypes = {
   onOpenArticle: PropTypes.func,
   timeout: PropTypes.bool,
+  h1: PropTypes.string, 
+  h2: PropTypes.string
 }
 
-export default Header
+const HeaderWithQuery = () => (
+  <StaticQuery
+    query={graphql`
+      query HeaderQuery {
+        site {
+          siteMetadata {
+            h1
+            h2
+          }
+        }
+      }
+    `}
+    render={data => <Header {...data.site.siteMetadata} />}
+  />
+);
+
+export default HeaderWithQuery;

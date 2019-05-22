@@ -2,7 +2,10 @@ module.exports = {
   siteMetadata: {
     title: "David DeRooy - Business Card Website",
     author: "David DeRooy",
-    description: "A Business Card Website"
+    description: "A Business Card Website",
+    h1: "John Doe",
+    h2: "A solid dude who gets things done", 
+    bio: " "
   },
   plugins: [
     'gatsby-plugin-react-helmet',
