@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "David DeRooy - Business Card Website",
-    author: "David DeRooy",
+    title: "John Doe",
+    author: "John Doe",
     description: "A Business Card Website",
     h1: "John Doe",
-    h2: "A solid dude who gets things done", 
+    h2: "A solid dude who gets things done",
+    hicon: "icon fa-diamond",
     bio: " "
   },
   plugins: [

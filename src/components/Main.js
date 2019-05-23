@@ -33,67 +33,67 @@ class Main extends React.Component {
             <div className="grid-item">
               <ul className="actions vertical">
                 <li>
-                  <h3>Frontend:</h3>
-                  <span className="icon fa-laptop" />
-                  <span className="icon fa-mobile" />
+                  <h3>Selling Stuff:</h3>
+                  <span className="icon fa-home" />
+                  <span className="icon fa-car" />
                 </li>
                 <li>
-                  <p>React &nbsp; || &nbsp; Core JS</p>
+                  <p>Real Estate Guru </p>
                 </li>
                 <li>
-                  <p>Styled Components &nbsp; || &nbsp; Sass</p>
-                </li>
-              </ul>
-            </div>
-            <div className="grid-item">
-              <ul className="actions vertical">
-                <li>
-                  <h3>Backend:</h3>
-                  <span className="icon fa-server" />
-                </li>
-                <li>
-                  <p>Java + Spring Boot</p>
-                </li>
-                <li>
-                  <p>Node + Express</p>
-                </li>
-                <li>
-                  <p>REST &nbsp; || &nbsp; SOAP &nbsp; || &nbsp; GraphQL</p>
+                  <p>Car Sales Professional</p>
                 </li>
               </ul>
             </div>
             <div className="grid-item">
               <ul className="actions vertical">
                 <li>
-                  <h3>DevOps:</h3>
-                  <span className="icon fa-cloud" />
-                  <span className="icon fa-terminal" />
+                  <h3>Managing Stuff:</h3>
+                  <span className="icon fa-users" />
                 </li>
                 <li>
-                  <p>Git &nbsp; || &nbsp; SVN</p>
+                  <p>PMP credentials</p>
                 </li>
                 <li>
-                  <p>Docker</p>
+                  <p>Company Director</p>
                 </li>
                 <li>
-                  <p>CI + Jenkins</p>
-                </li>
-                <li>
-                  <p>Jira &nbsp; || &nbsp; Trello</p>
+                  <p>1000% Gains</p>
                 </li>
               </ul>
             </div>
             <div className="grid-item">
               <ul className="actions vertical">
                 <li>
-                  <h3>Databases:</h3>
-                  <span className="icon fa-database" />
+                  <h3>Building Stuff:</h3>
+                  <span className="icon fa-wrench" />
+                  <span className="icon fa-pencil" />
                 </li>
                 <li>
-                  <p>MySQL</p>
+                  <p>Buildings</p>
                 </li>
                 <li>
-                  <p>PostgreSQL</p>
+                  <p>Cool Code stuff</p>
+                </li>
+                <li>
+                  <p></p>
+                </li>
+                <li>
+                  <p></p>
+                </li>
+              </ul>
+            </div>
+            <div className="grid-item">
+              <ul className="actions vertical">
+                <li>
+                  <h3>Researching Stuff:</h3>
+                  <span className="icon fa-book" />
+                </li>
+                <li>
+                  <p>Science</p>
+                </li>
+                <li>
+                  <p>new produts</p>
                 </li>
               </ul>
             </div>
@@ -114,16 +114,12 @@ class Main extends React.Component {
             <img src={AboutPic} alt="" />
           </span>
           <p>
-            In 2017 David graduated from Systems Design Engineering at Waterloo.
-            Over the course of his career so far, David has worked for both
-            startup and corporate enterprises.{' '}
+            John Doe is a solid dude who does solid stuff. He has been doing solid stuff since 1990 and is a total boss now. 
           </p>
           <p>
-            David is passionate about learning from others, and values team
-            relationships. He likes to know the big picture, and keeps an eye on
-            the final project outcome.{' '}
+            John Doe is passionate about work and doing cool things. 
           </p>
-          <p>"The value of an idea lies in the using of it" - Thomas Edison.</p>
+          <p></p>
           {close}
         </article>
 
@@ -138,8 +134,23 @@ class Main extends React.Component {
           <NetlifyForm onChangeArticle={this.props.onChangeArticle} />
           <ul className="icons">
             <li>
-              <a href="https://github.com/dderooy" className="icon fa-github">
+              <a href="https://github.com" className="icon fa-github">
                 <span className="label">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" className="icon fa-facebook">
+                <span className="label">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com" className="icon fa-linkedin">
+                <span className="label">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" className="icon fa-instagram">
+                <span className="label">Intagram</span>
               </a>
             </li>
           </ul>

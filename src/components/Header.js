@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby';
 
-const Header = ({h1, h2, onOpenArticle, timeout}) => (
+const Header = ({h1, h2, hicon, onOpenArticle, timeout}) => (
   <header id="header" style={timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-code" />
+      <span className={hicon} />
     </div>
     <div className="content">
       <div className="inner">
@@ -54,7 +54,8 @@ Header.propTypes = {
   onOpenArticle: PropTypes.func,
   timeout: PropTypes.bool,
   h1: PropTypes.string,
-  h2: PropTypes.string
+  h2: PropTypes.string,
+  hicon: PropTypes.string
 }
 
 const HeaderWithQuery = props => (
@@ -65,6 +66,7 @@ const HeaderWithQuery = props => (
           siteMetadata {
             h1
             h2
+            hicon
           }
         }
       }
